@@ -111,6 +111,19 @@ npx expo start      # press w for web, or scan the QR code with Expo Go on your 
 ./scripts/deploy-web.sh   # build + deploy the web version to Vercel
 ```
 
+## Built with Kiro
+
+The whole app was built in **Kiro**, starting from design reference images and a visual spec. The [`.kiro/`](.kiro) folder holds the working files:
+
+| File | What's inside |
+|---|---|
+| [`.kiro/steering/`](.kiro/steering) | Product vision, tech rules and repo structure the agent followed |
+| [`.kiro/specs/native-app/`](.kiro/specs/native-app) | Requirements (EARS), design and tasks for the 17-screen app |
+| [`.kiro/specs/boston-map/`](.kiro/specs/boston-map) | The real OpenStreetMap layer: requirements, design, tasks |
+| [`.kiro/specs/demo-launch/`](.kiro/specs/demo-launch) | Art, confetti, onboarding flow and the Vercel launch |
+| [`.kiro/hooks/`](.kiro/hooks) | Agent hooks: typecheck on save, regenerate screens, pre-deploy check, build logging |
+| [`.kiro/BUILD_LOG.md`](.kiro/BUILD_LOG.md) | Every build, check and deploy, with results |
+
 ## What's next
 
 Real payments (card holds released on goal miss) · organizer dashboards for cities and nonprofits with "new-to-neighborhood" impact reports · campus and classroom pathways · more cities after Boston.

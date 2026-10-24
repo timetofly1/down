@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "name": "Pre-deploy check + deploy",
+  "description": "Manual: verify the demo, then ship the web build to Vercel.",
+  "version": "1",
+  "when": { "type": "userTriggered" },
+  "then": { "type": "askAgent", "prompt": "1) `npx tsc --noEmit` must be clean. 2) Run ./scripts/deploy-web.sh. 3) Confirm https://imdownapp.vercel.app returns 200. 4) Click through the demo moment on the live URL: unlock, onboarding (pick 3 vibes), Start swiping, I'm down on Salsa, and confirm 150/150 It's on. appears with confetti. 5) Append the result to .kiro/BUILD_LOG.md." }
+}

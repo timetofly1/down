@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "name": "Regenerate screens",
+  "description": "When the screen generator changes, rebuild Phone.gen.tsx and typecheck.",
+  "version": "1",
+  "when": { "type": "fileEdited", "patterns": ["scripts/transpile.py"] },
+  "then": { "type": "askAgent", "prompt": "Re-run scripts/transpile.py to regenerate src/down/Phone.gen.tsx from the design reference template, then run `npx tsc --noEmit`. Summarize which screens changed." }
+}

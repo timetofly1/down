@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "name": "Log every build",
+  "description": "After each agent run, record what was built and verified in the build log.",
+  "version": "1",
+  "when": { "type": "agentStop" },
+  "then": { "type": "askAgent", "prompt": "If this run changed code, built, tested or deployed anything, append one row to .kiro/BUILD_LOG.md: time, step, and the verified result (errors, sizes, URLs). Do not log runs that changed nothing." }
+}

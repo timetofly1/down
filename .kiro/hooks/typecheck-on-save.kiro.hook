@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "name": "Typecheck on save",
+  "description": "Keep the app compiling: typecheck whenever app source changes.",
+  "version": "1",
+  "when": { "type": "fileEdited", "patterns": ["src/**/*.ts", "src/**/*.tsx"] },
+  "then": { "type": "askAgent", "prompt": "Run `npx tsc --noEmit` in the project root. If there are errors, fix them in the edited files (never in generated files: src/down/Phone.gen.tsx, src/down/fonts.gen.ts). Report the final error count." }
+}
