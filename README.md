@@ -1,68 +1,120 @@
-# down.
+<p align="center"><img src="docs/hero.jpg" alt="down. — swipe on plans before they exist" width="100%"></p>
 
-**Swipe on plans before they exist. Back the ones you want to happen.**
-
-### 👉 Demo link: [imdownapp.vercel.app](https://imdownapp.vercel.app)
-
-Open it on a phone for the full-screen app (Safari → Share → **Add to Home Screen**), or on a laptop to see it in an iPhone frame.
+<h3 align="center">👉 <a href="https://imdownapp.vercel.app">Demo link: imdownapp.vercel.app</a></h3>
+<p align="center"><i>Best on a phone: open it in Safari → Share → <b>Add to Home Screen</b>. On a laptop it runs inside an iPhone frame.</i></p>
 
 ---
 
-## What it is
+## The problem: "we should do something" almost never happens
 
-down. is a Boston events app where people swipe on plans *before* they exist.
+Every city has the same broken loop:
 
-- **Tinder-style swiping** — swipe right ("I'm down") or left ("nah") on proposed plans.
-- **Kickstarter-style goals** — each plan needs N people. Hit the goal and it becomes a real event.
-- **Luma-style tickets** — early backers lock in a free RSVP or a paid early-bird pledge, only charged if it happens.
+- **People want to go out, but stay in their bubble.** You know your block, your campus, your commute. The neighborhood 15 minutes away on the Orange Line might as well be another city. Loneliness is now a public-health crisis; the U.S. Surgeon General called it an epidemic in 2023.
+- **Organizers guess, then lose money.** A city books a band, a nonprofit orders 200 pairs of gloves, a small business rents a room. Then 12 people show up. Or the event never happens because nobody wants to take the first risk.
+- **Good ideas die in the group chat.** "We should do karaoke after finals" gets 9 heart reactions and zero plans.
+- **Cities lose their young people.** Boston trains a huge share of the country's graduates, and many leave because they never found their people or their places here.
 
-Anyone can pitch a plan: city programs, nonprofits, brands, local hosts (a barber, a home cook), or a friend in a group chat. Hosts earn money. The mission: get young people into Boston neighborhoods they don't usually visit, meeting people they wouldn't otherwise meet.
+The missing piece isn't more event listings. It's **proof that people will show up, before anyone spends a dollar.**
 
-## Demo flow (2 minutes)
+## The idea: plans that only happen if enough people are down
 
-1. **Lock screen** → swipe up (or tap) to open. Tapping the "It's on" notification jumps straight to a ticket.
-2. **Onboarding** → pick 3+ vibes → get matched neighborhoods → **Start swiping**.
-3. **Swipe** → "Salsa under the lights" is at 148/150. Swipe right → 149 → another backer joins → **150** → **It's on.** with confetti and a ticket.
-4. **Map** → real OpenStreetMap of Boston with live plan pins. Drag to explore.
-5. **Squad** → group chat with shared plans and a poll. **Lock it in together** → pledge → confetti.
-6. **Host** → earnings, payouts calendar, your plans.
-7. **Pitch a plan** → 4-step flow that posts to the squad.
-8. **Profile** → neighborhood passport stamps.
+**down.** lets anyone pitch a plan that doesn't exist yet. People swipe on it. When enough people are down, it turns into a real event with tickets.
 
-## Screens
+> **Tinder** for discovery (swipe right: "I'm down") × **Kickstarter** for commitment (a goal, all-or-nothing) × **Luma** for the event itself (ticket, wallet, reminders).
 
-Lock screen · Onboarding (3) · Swipe deck · Plan detail · Lock it in · It's on ticket · You're going · Map · Squad chat · Pitch a plan (4 steps) · Host earnings + calendar · Profile passport · Inbox
+Every plan moves through four stages:
 
-## Tech
+| Pitched | Heating up | **It's on** | Happened |
+|---|---|---|---|
+| Someone posts an idea | People swipe right and back it | Goal hit: spots become tickets | Your passport gets a new neighborhood stamp |
 
-- **React Native + Expo (SDK 58)**, TypeScript, Expo Router — one codebase for iOS, Android and web
-- **Reanimated 4 + Gesture Handler 3** for the card stack, sheets, map panning and confetti
-- **react-native-svg** for the doodle art, QR code, rings and icons; **expo-blur** for glass
-- **Zustand** for shared state across tabs
-- **OpenStreetMap** data (via OpenFreeMap vector tiles), pre-rendered into the brand palette
-- Deployed on **Vercel**
+**Nobody pays for a plan that doesn't happen.** Free plans fill an interest bar. Paid plans hold your card and only charge if the goal is hit.
 
-## Run it locally
+## Who it's for, with real-world examples
+
+| Who | What they pitch on down. | Why it matters |
+|---|---|---|
+| 🏛️ **A city** (Boston Parks & Rec) | *Salsa under the lights* in Nubian Square: free lesson + live band, **only if 150 people are down** | Public money goes to programs residents have already proven they want. The app shows **"51 people backing this have never been to Nubian Square."** That's the impact metric cities can't get anywhere else. |
+| 🌊 **A nonprofit** (harbor cleanup) | Piers Park shoreline cleanup + oyster shucking in East Boston | Volunteers commit *before* the dumpster and gloves are ordered. No wasted supplies, no empty shorelines. |
+| 📚 **A library** | Zine night in Codman Square: risograph, scissors, old Globe archives | Programming backed by real demand, reaching neighbors who'd never walk into a branch otherwise. |
+| 👟 **A brand** | Midnight sneaker swap on a Chinatown rooftop | Test a pop-up with zero risk. If 80 people aren't down, nothing is rented and nothing is spent. Real market validation in days. |
+| 🍜 **A home cook or local host** | Bà Lan's Sunday phở supper: 12 seats at one long table | Sells out *before* buying ingredients. Hosts earn real money (see the Host tab: payouts, pledges, tips). |
+| 🏃 **A community group** | Sunrise 5K in Franklin Park + jollof breakfast | Health, belonging, and a reason to discover a park you've never crossed. |
+| 💬 **You and your friends** | "Karaoke in Chinatown after finals," pitched straight into the group chat | The squad votes on the spot. Once 3 of you are down, it opens up to people nearby. "We should…" becomes a date, a place and a crowd. |
+
+## Why people come back: the Passport
+
+Every plan you show up to stamps a neighborhood you hadn't been to. Your profile turns into a map of the city you actually know. **The goal isn't more events. It's more of the city, with people you wouldn't otherwise meet.**
+
+---
+
+## See it
+
+### 1. A notification that brings you in
+<p>
+<img src="docs/lock.jpg" width="200" alt="Lock screen notifications">
+<img src="docs/welcome.jpg" width="200" alt="Welcome">
+<img src="docs/vibes.jpg" width="200" alt="Pick your vibes">
+<img src="docs/hoods.jpg" width="200" alt="Suggested neighborhoods">
+</p>
+
+Swipe up to open. Pick what gets you out (late nights, food, live music...). down. suggests **neighborhoods you've never backed a plan in**, ranked by your vibes.
+
+### 2. Swipe on plans before they exist
+<p>
+<img src="docs/swipe.jpg" width="200" alt="Swipe deck with ticket card">
+<img src="docs/detail.jpg" width="200" alt="Plan detail with stage tracker">
+<img src="docs/map.jpg" width="200" alt="Real Boston map with plan pins">
+</p>
+
+Every card is a ticket: who's hosting, when, where, and **how close it is to happening** (148/150). Tap for the full plan: stage tracker, who's down, and polls so backers shape the details. The map is a real **OpenStreetMap of Boston** with every plan at its real venue.
+
+### 3. The moment it happens
+<p>
+<img src="docs/itson.jpg" width="200" alt="It's on — confetti and ticket">
+<img src="docs/booked.jpg" width="200" alt="Lock it in — backer confirmation">
+<img src="docs/squad.jpg" width="200" alt="Squad group chat">
+</p>
+
+Swipe right on Salsa at 148/150. You're 149. Seconds later Ama joins: **150. It's on.** Confetti, and your RSVP is now a ticket with a QR code. Lock in a pledge for another plan and you're **backer #42**. Share it with your squad, vote on the night, lock it in together.
+
+### 4. Anyone can host, and hosts get paid
+<p>
+<img src="docs/pitch.jpg" width="200" alt="Pitch a plan">
+<img src="docs/host.jpg" width="200" alt="Host earnings and calendar">
+</p>
+
+Pitch a plan in four steps: what & where, goal & price, a poll, preview. Hosts see earnings, held pledges, payouts and a calendar, plus insight like **"62% of your guests had never been to Fields Corner before your plans."**
+
+---
+
+## Try the 60-second demo
+
+1. Open **[imdownapp.vercel.app](https://imdownapp.vercel.app)** and swipe up (or tap *Swipe up to open*).
+2. **Get started** → pick 3 vibes → **Start swiping**.
+3. Swipe right on **Salsa under the lights** (148/150). Watch it hit **150 → It's on.** 🎉
+4. Tap the **down.** logo to see what you're going to. Check the **Map**, **Squad** and **Host** tabs.
+5. Tip: tap the big **"It's on."** to replay the confetti.
+
+## How it's built
+
+- **One codebase, real native app:** React Native + **Expo SDK 58**, TypeScript, Expo Router. It runs on iPhone and Android (Expo Go, no App Store review needed) and on the web (this Vercel deploy).
+- **Pixel-faithful to the design:** screens are generated from the design prototype's exact values (colors, type, spacing, motion) by `scripts/transpile.py`, rendered by a small CSS-to-native layout engine (`src/down/css.ts`, `ui.tsx`).
+- **Motion:** Reanimated 4 + Gesture Handler 3 for the swipe stack physics, sheets, map panning and confetti.
+- **Real map:** OpenStreetMap data (via OpenFreeMap vector tiles), rendered into the brand palette by `scripts/build-map.py`, with plans pinned at real Boston venues.
+- **Art:** custom orange + black doodle illustrations for every event (`src/down/doodles.tsx`).
+- **State:** Zustand store shared across tabs; seed data only, no backend needed for the demo.
 
 ```bash
 npm install
-npx expo start          # press w for web, or scan the QR code with Expo Go on your phone
+npx expo start      # press w for web, or scan the QR code with Expo Go on your phone
+./scripts/deploy-web.sh   # build + deploy the web version to Vercel
 ```
 
-Deploy the web build: `./scripts/deploy-web.sh`
+## What's next
 
-## Project layout
+Real payments (card holds released on goal miss) · organizer dashboards for cities and nonprofits with "new-to-neighborhood" impact reports · campus and classroom pathways · more cities after Boston.
 
-| Path | What |
-|---|---|
-| `src/down/Phone.gen.tsx` | All screens, generated from the design prototype (`scripts/transpile.py`) |
-| `src/down/ui.tsx`, `css.ts` | Layout/text engine that renders the design's exact values natively |
-| `src/down/store.ts`, `vm.ts` | App state, demo timing, and screen data |
-| `src/down/doodles.tsx` | Orange + black doodle art for each event |
-| `src/down/extras.tsx`, `geo.ts` | Real Boston map, swipe-up lock screen, confetti |
-| `scripts/build-map.py` | Renders the Boston map from OpenStreetMap data |
-| `scripts/build-fonts.py` | Cuts the Bricolage Grotesque / Geist font files |
+---
 
-## Credits
-
-Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, tiles by [OpenFreeMap](https://openfreemap.org) / OpenMapTiles. Fonts: Bricolage Grotesque, Geist and Geist Mono (SIL Open Font License). All people, plans and numbers in the demo are fictional seed data.
+<sub>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, tiles by <a href="https://openfreemap.org">OpenFreeMap</a> / OpenMapTiles. Fonts: Bricolage Grotesque, Geist, Geist Mono (SIL OFL). All people, plans and numbers in the demo are fictional.</sub>
