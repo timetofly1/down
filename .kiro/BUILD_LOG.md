@@ -37,7 +37,7 @@ Chronological record of every build, check and deploy for this project, built in
 | 29 | 18:55 | Live demo click-through: unlock → Get started → Late nights, Food, Live music → Next · 3 picked → Start swiping → I'm down → wait | ✅ **150 OF 150 DOWN · GOAL HIT → It's on.** + confetti + ticket |
 | 30 | 19:02 | README v2: problem, value prop, examples (city, nonprofit, library, brand, home cook, run club, friends), 12 screenshots + hero banner | ✅ |
 | 31 | 19:08 | `.kiro/` steering, specs (native-app, boston-map, demo-launch), hooks, this log | ✅ |
-| 32 | — | Publish to GitHub (`timetofly1/down`) | ⏳ waiting on account sign-in |
+| 32 | 19:17 | Publish to GitHub: `timetofly1/down` (public, default branch `demo`, website = demo link, topics) | ✅ https://github.com/timetofly1/down |
 
 ## Final verification snapshot
 

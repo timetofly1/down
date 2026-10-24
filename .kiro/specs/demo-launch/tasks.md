@@ -8,4 +8,4 @@
 - [x] 6. Phone-width web: full-screen layout + home-screen meta; redeploy
 - [x] 7. Live click-through of the demo moment (unlock → onboarding → 3 vibes → Start swiping → I'm down → 150/150 It's on.) ✅
 - [x] 8. README: story, problem, value prop, examples, 12 screenshots + hero
-- [ ] 9. Publish the repository to GitHub (waiting on account sign-in)
+- [x] 9. Publish the repository to GitHub → https://github.com/timetofly1/down (demo link set as the repo website)
