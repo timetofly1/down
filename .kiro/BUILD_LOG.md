@@ -38,6 +38,7 @@ Chronological record of every build, check and deploy for this project, built in
 | 30 | 19:02 | README v2: problem, value prop, examples (city, nonprofit, library, brand, home cook, run club, friends), 12 screenshots + hero banner | ✅ |
 | 31 | 19:08 | `.kiro/` steering, specs (native-app, boston-map, demo-launch), hooks, this log | ✅ |
 | 32 | 19:17 | Publish to GitHub: `timetofly1/down` (public, default branch `demo`, website = demo link, topics) | ✅ https://github.com/timetofly1/down |
+| 33 | 19:22 | Connect Vercel project `imdownapp` to GitHub `timetofly1/down` (production branch `demo`, build `npm run build:web` → `dist`) | ✅ pushes to `demo` auto-deploy |
 
 ## Final verification snapshot
 
