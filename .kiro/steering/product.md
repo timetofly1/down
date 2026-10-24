@@ -4,7 +4,9 @@ inclusion: always
 
 # Product: down.
 
-**One line:** Swipe on plans before they exist. Back the ones you want to happen.
+**One line:** Boston could use more life. Start some.
+
+> Pitch a plan or back someone else's. When enough people are down, it happens, and meet the neighbor whose dog's name you know but not theirs.
 
 down. is a Boston events app where people discover and back *proposed* plans. A plan only becomes a real event when enough people say they're down. It combines three familiar patterns:
 

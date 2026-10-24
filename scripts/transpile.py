@@ -82,6 +82,12 @@ phone = next(k for k in p.root.kids if isinstance(k, Node))
 
 BIND = re.compile(r"\{\{\s*([A-Za-z_][\w.]*)\s*\}\}")
 
+# Product copy that supersedes the reference wording.
+COPY = {
+    'Swipe on plans before they exist. Back the ones you want to happen.': 'Boston could use more life. Start some.',
+    "Every plan is somewhere in Boston you haven't been yet, with people you haven't met yet.": "Pitch a plan or back someone else's. When enough people are down, it happens, and meet the neighbor whose dog's name you know but not theirs.",
+}
+
 
 def ref(expr, scope):
     head = expr.split(".")[0]
@@ -162,6 +168,7 @@ def emit_inline(kids, scope, ind):
     for k in kids:
         if isinstance(k, str):
             t = re.sub(r"\s+", " ", k)
+            t = COPY.get(t.strip(), t)
             if not t:
                 continue
             pos = 0

@@ -39,6 +39,7 @@ Chronological record of every build, check and deploy for this project, built in
 | 31 | 19:08 | `.kiro/` steering, specs (native-app, boston-map, demo-launch), hooks, this log | ✅ |
 | 32 | 19:17 | Publish to GitHub: `timetofly1/down` (public, default branch `demo`, website = demo link, topics) | ✅ https://github.com/timetofly1/down |
 | 33 | 19:22 | Connect Vercel project `imdownapp` to GitHub `timetofly1/down` (production branch `demo`, build `npm run build:web` → `dist`) | ✅ pushes to `demo` auto-deploy |
+| 34 | 19:39 | New welcome copy: "Boston could use more life. Start some." + body; applied via transpiler copy overrides, README, hero, meta description, steering | ✅ |
 
 ## Final verification snapshot
 

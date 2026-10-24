@@ -13,7 +13,7 @@ meta = ('<meta name="theme-color" content="#FF5A1F" />'
         '<meta name="mobile-web-app-capable" content="yes" />'
         '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />'
         '<meta name="apple-mobile-web-app-title" content="down." />'
-        '<meta name="description" content="Swipe on plans before they exist. Back the ones you want to happen." />')
+        '<meta name="description" content="Boston could use more life. Start some. Pitch a plan or back someone else&apos;s." />')
 s = s.replace('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />',
               '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />' + meta, 1)
 open(p, 'w').write(s)

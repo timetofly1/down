@@ -1,4 +1,7 @@
-<p align="center"><img src="docs/hero.jpg" alt="down. — swipe on plans before they exist" width="100%"></p>
+<p align="center"><img src="docs/hero.jpg" alt="down. — Boston could use more life. Start some." width="100%"></p>
+
+<h2 align="center">Boston could use more life. Start some.</h2>
+<p align="center">Pitch a plan or back someone else's. When enough people are down, it happens, and meet the neighbor whose dog's name you know but not theirs.</p>
 
 <h3 align="center">👉 <a href="https://imdownapp.vercel.app">Demo link: imdownapp.vercel.app</a></h3>
 <p align="center"><i>Best on a phone: open it in Safari → Share → <b>Add to Home Screen</b>. On a laptop it runs inside an iPhone frame.</i></p>

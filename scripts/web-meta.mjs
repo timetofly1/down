@@ -11,7 +11,7 @@ const meta = [
   '<meta name="mobile-web-app-capable" content="yes" />',
   '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />',
   '<meta name="apple-mobile-web-app-title" content="down." />',
-  '<meta name="description" content="Swipe on plans before they exist. Back the ones you want to happen." />',
+  '<meta name="description" content="Boston could use more life. Start some. Pitch a plan or back someone else\'s." />',
 ].join('');
 html = html.replace(
   /<meta name="viewport"[^>]*>/,

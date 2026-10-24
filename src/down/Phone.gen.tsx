@@ -1235,10 +1235,10 @@ export function Phone({ vm }: { vm: any }) {
               <T>{"down"}<T s="color:#FFFDF8">{"."}</T></T>
             </V>
             <V s="font:700 27px/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;max-width:320px;text-wrap:balance">
-              <T>{"Swipe on plans before they exist. Back the ones you want to happen."}</T>
+              <T>{"Boston could use more life. Start some."}</T>
             </V>
             <V s="font:500 15.5px/1.45 Geist,sans-serif;max-width:310px;color:rgba(21,18,15,.8);text-wrap:pretty">
-              <T>{"Every plan is somewhere in Boston you haven't been yet, with people you haven't met yet."}</T>
+              <T>{"Pitch a plan or back someone else's. When enough people are down, it happens, and meet the neighbor whose dog's name you know but not theirs."}</T>
             </V>
           </V>
           <V s="height:58px;border-radius:29px;border:0;background:#15120F;color:#FFFDF8;font:800 18px 'Bricolage Grotesque',sans-serif;cursor:pointer;flex:none" btn onPress={vm.onb.next} active="transform:scale(.97)">
